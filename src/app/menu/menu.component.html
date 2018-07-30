@@ -1,0 +1,10 @@
+<nav class="main-menu">
+  <ul>
+    <li *ngFor="let item of menuItems">
+      <a routerLink="{{rewriteUrl(item.url)}}" routerLinkActive="active">{{item.title}}</a>
+    </li>
+    <li *ngIf="menuItems">
+      <a routerLink="/nothing" routerLinkActive="active">Kapotte link</a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,17 @@
+<div class="content-wrapper">
+  <div class="content-container">
+    <div *ngIf="!post">Loading</div>
+    <div *ngIf="post">
+      <div *ngIf="post.length === 0; else elseBlock">
+        <h1>404</h1>
+        <p>error</p>
+      </div>
+      <ng-template #elseBlock>
+        <div>
+          <h1>{{post[0].title.rendered}}</h1>
+          <div [innerHTML]="post[0].content.rendered"></div>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

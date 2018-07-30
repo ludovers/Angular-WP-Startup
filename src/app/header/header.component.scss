@@ -1,0 +1,26 @@
+header#header{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  width:100%;
+  background-color:#3a83c1;
+  margin-bottom: 3rem;
+  a{
+    color:#FFF;
+  }
+  .header-left{
+    align-self:center;
+    margin-right:auto;
+    padding:15px;
+    .logo-container{
+      a{
+        display: block;
+        line-height: 1;
+        font-size:3rem;
+      }
+    }
+  }
+  .header-right{
+    align-self:center;
+  }
+}

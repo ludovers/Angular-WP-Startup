@@ -1,0 +1,32 @@
+nav.main-menu{
+  ul{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    li{
+      a{
+        display: block;
+        padding:15px;
+        color:#FFF;
+        position: relative;
+        &:after{
+          content:'';
+          position: absolute;
+          height:1px;
+          background-color:#FFF;
+          bottom:15px;
+          left:15px;
+          right:15px;
+          width:0;
+          transition:0.2s ease-in-out;
+        }
+        &:hover:after{
+          width:calc(100% - (2 * 15px));
+        }
+        &.active:after{
+          width:calc(100% - (2 * 15px));
+        }
+      }
+    }
+  }
+}

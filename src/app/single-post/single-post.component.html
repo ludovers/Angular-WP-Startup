@@ -1,0 +1,12 @@
+<div class="content-wrapper">
+  <div class="content-container">
+    <div *ngIf="!post">
+      Loading
+    </div>
+    <div *ngIf="post">
+      <h1>{{post[0].title.rendered}}</h1>
+      <div [innerHTML]="post[0].content.rendered"></div>
+      <!-- <pre>{{JSON(post[0])}}</pre> -->
+    </div>
+  </div>
+</div>
