@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 header#header{
   display:flex;
   flex-direction:row;
@@ -11,7 +13,7 @@ header#header{
   .header-left{
     align-self:center;
     margin-right:auto;
-    padding:15px;
+    padding:$container-pad;
     .logo-container{
       a{
         display: block;

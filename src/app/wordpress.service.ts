@@ -9,8 +9,8 @@ import { catchError, map, tap } from 'rxjs/operators';
 })
 export class WordpressService {
 
-  private url = `http://localhost:8080/wp-json/wp/v2`;
-  private menuUrl = `http://localhost:8080/wp-json/wp-api-menus/v2/menu-locations`;
+  private url = `/wp-json/wp/v2`;
+  private menuUrl = `/wp-json/wp-api-menus/v2/menu-locations`;
 
   constructor(private http: HttpClient) { }
 

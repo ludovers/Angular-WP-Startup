@@ -26,7 +26,7 @@ import { HeaderComponent } from './header/header.component';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
