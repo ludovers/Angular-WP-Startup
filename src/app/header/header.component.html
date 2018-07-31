@@ -1,7 +1,7 @@
 <header id="header">
   <div class="header-left">
     <div class="logo-container">
-      <a routerLink="/">Logo</a>
+      <a routerLink="/">{{nameService.name.chosen ? nameService.name.name + "'s app" : "Who's app is this?"}}</a>
     </div>
   </div>
   <div class="header-right">

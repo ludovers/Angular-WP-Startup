@@ -1,6 +1,9 @@
 <div class="content-wrapper">
   <div class="content-container">
     <h1>Home</h1>
-    <div>Welkom.</div>
+    <p>Welkom {{nameService.name.name}}</p>
+    <p *ngIf="nameService.name.name">Leuk dat je een naam hebt ingevuld</p>
+    <input type="text" #name (keyup)="onKey(name.value)" value="{{nameService.name.name}}"/>
+    <!-- <pre>{{JSON(nameService)}}</pre> -->
   </div>
 </div>
